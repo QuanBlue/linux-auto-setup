@@ -1,8 +1,8 @@
 # Quick setup Ubuntu
 
-## <u>Step 1:</u> Install manual
+## <u>Step 1:</u> Manual installation
 
-**Install language type - Vietnamese (bamboo)**  
+**Install language type - Vietnamese (unikey)**  
 https://minhng.info/tips/unikey-ubuntu-2204.html
 
 **Install google chrome**  
@@ -11,7 +11,7 @@ https://www.google.com/chrome/?brand=BNSD&gclid=EAIaIQobChMI7s-wuIWA_QIVAzdgCh0V
 **Install oh-my-zsh**  
 https://www.youtube.com/watch?v=eh7lM3Yvf94&ab_channel=CodeFallacy
 
-## <u>Step 2:</u> Install auto
+## <u>Step 2:</u> Automatic installation
 
 > Copy these command and run in terminal
 
@@ -58,7 +58,7 @@ sudo apt install neofetch -y
 sudo apt install zsh -y
 ```
 
-## <u>Step 3:</u> Install Gnome Extension
+## <u>Step 3:</u> Install Gnome's Extension
 
 **Burn My Windows**  
 https://extensions.gnome.org/extension/4679/burn-my-windows/
