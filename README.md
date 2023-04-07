@@ -17,6 +17,9 @@ https://learnubuntumate.weebly.com/ice-ssb.html
 **Install WPS office**
 https://www.wps.com/office/linux/
 
+**Install Cursor IDE**
+https://www.cursor.so/
+
 ## <u>Step 2:</u> Automatic installation
 
 > Open terminal, run this command and enter password
@@ -98,10 +101,25 @@ sudo apt update
 sudo apt install onedrive -y
 systemctl --user enable onedrive
 
+# Install NVIDIA drivers
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.0-1_all.deb
+sudo dpkg -i cuda-keyring_1.0-1_all.deb
+sudo apt-get update
+sudo apt-get install cuda -y
+
 # Install VirtualBox + Vagrant
 sudo apt install virtualbox -y
 wget https://releases.hashicorp.com/vagrant/2.2.19/vagrant_2.2.19_x86_64.deb
 sudo apt install ./vagrant_2.2.19_x86_64.deb
+y
+# Install hacking tool - aircrack-ng
+sudo apt install aircrack-ng -y
+
+# Install generate dictionary tool - crunch
+sudo apt install crunch -y
+
+# Install cracking password tool - hashcat
+sudo apt install hashcat -y
 
 # Uninstall Libre office
 sudo apt-get remove --purge libreoffice\* -y
@@ -113,6 +131,11 @@ sudo apt install curl -y
 
 # Install ranger (file manager for the console)
 sudo apt install ranger -y
+
+# install fuse (for running ImageApp application)
+sudo apt-get install fuse
+sudo modprobe fuse
+sudo usermod -a -G fuse $USER
 
 # Install htop
 sudo apt install htop -y
