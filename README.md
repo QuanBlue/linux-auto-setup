@@ -71,7 +71,11 @@ sudo update-alternatives --config java
 sudo apt-get install openjdk-8-jdk -y
 
 # Install pip3 (python3)
-sudo apt install python3-pip
+sudo apt install python3-pip -y
+
+# Install mono (running .exe file in linux)
+# Using: mono [file_name].exe
+sudo apt install mono-complete -y
 
 # Install Jenkins
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
