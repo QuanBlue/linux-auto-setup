@@ -38,6 +38,9 @@ cd Downloads
 # update system
 sudo apt update && sudo apt upgrade && sudo apt dist-upgrade -y
 
+# update npm
+sudo npm install -g npm@latest --force
+
 # fix wrong time due dual boot
 timedatectl set-local-rtc 1
 
@@ -63,6 +66,11 @@ git config --global user.name "QuanBlue"
 git config --global user.email "quannguyenthanh558@gmail.com"
 git config --global credential.helper store
 
+# Install Git extension
+# better-commits: https://github.com/Everduin94/better-commits
+# Usage: better-commits
+sudo npm install -g better-commits
+
 # Install Java
 sudo apt update
 java –version
@@ -74,7 +82,7 @@ sudo apt-get install openjdk-8-jdk -y
 sudo apt install python3-pip -y
 
 # Install mono (running .exe file in linux)
-# Using: mono [file_name].exe
+# Usage: mono [file_name].exe
 sudo apt install mono-complete -y
 
 # Install Jenkins
