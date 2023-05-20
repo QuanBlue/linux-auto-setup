@@ -39,7 +39,11 @@ cd Downloads
 sudo apt update && sudo apt upgrade && sudo apt dist-upgrade -y
 
 # update npm
-sudo npm install -g npm@latest --force
+sudo npm install -g npm@latest 
+npm update -g
+
+# update nodejs to version v20.2.0
+nvm install v20.2.0
 
 # fix wrong time due dual boot
 timedatectl set-local-rtc 1
