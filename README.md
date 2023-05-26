@@ -137,8 +137,7 @@ sudo apt update
 apt-cache policy docker-ce
 sudo apt install docker-ce
 sudo systemctl enable docker
-sudo usermod -aG docker ${USER}
-su - ${USER}
+sudo usermod -aG docker $USER
 
 # Install Docker-machine
 curl -L https://github.com/docker/machine/releases/download/v0.16.2/docker-machine-`uname -s`-`uname -m` >/usr/local/bin/docker-machine && \
