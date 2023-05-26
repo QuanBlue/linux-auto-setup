@@ -43,13 +43,13 @@ sudo npm install -g npm@latest
 npm update -g
 
 # update nodejs to version v20.2.0
-nvm install v20.2.0
+nvm install v20.2.0 -y
 
 # fix wrong time due dual boot
 timedatectl set-local-rtc 1
 
 # install Visual studio Code
-sudo snap install --classic code
+sudo snap install --classic code -y
 
 # Install Notion
 sudo snap install notion-snap
@@ -126,8 +126,21 @@ sudo apt-get install cuda -y
 # Install VirtualBox + Vagrant
 sudo apt install virtualbox -y
 wget https://releases.hashicorp.com/vagrant/2.2.19/vagrant_2.2.19_x86_64.deb
-sudo apt install ./vagrant_2.2.19_x86_64.deb
-y
+sudo apt install ./vagrant_2.2.19_x86_64.deb -y
+
+# Install Docker
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+apt-cache policy docker-ce
+sudo apt install docker-ce
+sudo systemctl enable docker
+sudo usermod -aG docker ${USER}
+su - ${USER}
+
+
 # Install hacking tool - aircrack-ng
 sudo apt install aircrack-ng -y
 
@@ -138,9 +151,9 @@ sudo apt install crunch -y
 sudo apt install hashcat -y
 
 # Uninstall Libre office
-sudo apt-get remove --purge libreoffice\* -y
-sudo apt-get clean
-sudo apt-get autoremove
+sudo apt remove --purge libreoffice\* -y
+sudo apt clean 
+sudo apt autoremove -y
 
 # Install curl
 sudo apt install curl -y
@@ -149,7 +162,7 @@ sudo apt install curl -y
 sudo apt install ranger -y
 
 # install fuse (for running ImageApp application)
-sudo apt-get install fuse
+sudo apt-get install fuse -y
 sudo modprobe fuse
 sudo usermod -a -G fuse $USER
 
@@ -161,10 +174,10 @@ cd Desktop
 git clone https://github.com/QuanBlue/My-Linux-Setting.git
 
 # Install VLC
-sudo snap install vlc
+sudo snap install vlc -y
 
 # Install Gnome Shell Extensions
-sudo apt install gnome-shell-extensions
+sudo apt install gnome-shell-extensions -y
 
 # Install tmux
 sudo apt install tmux -y
