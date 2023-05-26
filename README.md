@@ -140,6 +140,9 @@ sudo systemctl enable docker
 sudo usermod -aG docker ${USER}
 su - ${USER}
 
+# Install Docker-machine
+curl -L https://github.com/docker/machine/releases/download/v0.16.2/docker-machine-`uname -s`-`uname -m` >/usr/local/bin/docker-machine && \
+chmod +x /usr/local/bin/docker-machine
 
 # Install hacking tool - aircrack-ng
 sudo apt install aircrack-ng -y
