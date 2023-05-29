@@ -13,4 +13,6 @@ wget -qO - https://download.opensuse.org/repositories/home:/npreining:/debian-ub
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/obs-onedrive.gpg] https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/ ./" | sudo tee /etc/apt/sources.list.d/onedrive.list
 sudo apt update
 sudo apt install onedrive -y
+
+# enable onedrive
 systemctl --user enable onedrive
