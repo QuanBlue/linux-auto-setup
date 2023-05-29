@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
 
+dotfiles_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# We have cd to directory to make sure find only searches in this directory
+cd "$dotfiles_dir"
+
 # Install Git + setup
-sudo apt install git-all -y
-sudo git config --global user.name "QuanBlue"
-sudo git config --global user.email "quannguyenthanh558@gmail.com"
+sudo apt install git -y
+
+# Set up configuration
+cp .gitconfig ~/.gitconfig
+
 sudo git config --global credential.helper store
 
 # Git extension
