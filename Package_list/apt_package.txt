@@ -1,6 +1,3 @@
-# Unix shell - A command interpreter for shell scripting
-zsh
-
 # client URL - a command line tool to transfer data to and from a server.
 curl
 
