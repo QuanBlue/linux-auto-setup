@@ -4,6 +4,8 @@ git clone https://github.com/QuanBlue/Linux-Setting.git "$HOME/Linux-Setting"
 
 cd "$HOME/Linux-Setting"
 
-. ./prerequisites.sh
+echo $(pwd)
+echo $(ls -a)
+bash ./prerequisites.sh
 
-. ./bootstrap.sh
+bash ./bootstrap.sh

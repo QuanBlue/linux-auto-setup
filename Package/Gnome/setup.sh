@@ -19,11 +19,13 @@ done
 # Gnome-shell-extensions
 sudo apt install gnome-shell-extensions -y
 
+sudo apt install gnome-shell-extension-desktop-icons-ng -y
+
 # Install gnome-extensions-cli
 pip3 install --upgrade gnome-extensions-cli
 
 # Install Gnome Extensions
-extensions_array=( 
+installed_extensions_array=( 
     burn-my-windows@schneegans.github.com 
     netspeedsimplified@prateekmedia.extension 
     transparent-top-bar@ftpix.com 
@@ -32,8 +34,10 @@ extensions_array=(
 echo "------- Install Gnome extensions --------"
 for extension in ${extensions_array[@]}; do
     echo "[Info] Installing $extension..."
+
     gnome-extensions-cli install $extension
     gnome-extensions-cli enable $extension
+
     echo "[Info] Install $extension complete!"
 done
 
