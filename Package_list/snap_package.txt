@@ -12,3 +12,5 @@ foliate
 # A multimedia player and framework that plays most multimedia files
 vlc
 
+# Free office integrates all office document processor: Word, Excel Spreadsheet, ...
+wps-office 

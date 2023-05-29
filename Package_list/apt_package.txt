@@ -26,6 +26,5 @@ htop
 # virtual machine management
 virtualbox
 
-# Free office integrates all office document processor: Word, Excel Spreadsheet, ...
-wps-office 
+
 
