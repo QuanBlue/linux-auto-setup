@@ -1,0 +1,31 @@
+# Unix shell - A command interpreter for shell scripting
+zsh
+
+# client URL - a command line tool to transfer data to and from a server.
+curl
+
+# Terminal multiplexer
+tmux
+
+# Show system information
+neofetch
+
+# pip3 (python3)
+python3-pip
+
+# Install mono (running .exe file in linux)
+# Usage: mono [file_name].exe
+mono-complete
+
+# A console file manager
+ranger
+
+# System processes manager
+htop
+
+# virtual machine management
+virtualbox
+
+# Free office integrates all office document processor: Word, Excel Spreadsheet, ...
+wps-office 
+

@@ -1,0 +1,14 @@
+# Visual studio code
+--classic code 
+
+# Notion - note
+notion-snap-reborn 
+
+chatgpt-desktop
+
+# E-book reader
+foliate
+
+# A multimedia player and framework that plays most multimedia files
+vlc
+
