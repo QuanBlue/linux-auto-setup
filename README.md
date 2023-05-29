@@ -31,25 +31,23 @@
 <p align="center">
   <b>
     <a href="https://github.com/QuanBlue/Linux-Bootstrap">Documentation</a> •
-    <a href="https://github.com/QuanBlue/Linux-Bootstrap/issues/">Report Bug</a>
+    <a href="https://github.com/QuanBlue/Linux-Bootstrap/issues/">Report Bug</a> •
+    <a href="https://github.com/QuanBlue/Linux-Bootstrap/issues/">Request Feature</a>
   </b>
 </p>
 
 <br />
 
-<h2> Table of Contents </h2>
+<details open>
+<summary>Table of Contents</summary>
 
 -  [Usage](#usage)
 -  [Getting Started](#getting-started)
    -  [Prerequisites](#prerequisites)
    -  [Run Locally](#run-locally)
+-  [Contributors](#contributors)
 -  [License](#license)
-
-<!-- **Install google chrome**
-https://www.google.com/chrome/?brand=BNSD&gclid=EAIaIQobChMI7s-wuIWA_QIVAzdgCh0VLw9KEAAYASAAEgJWh_D_BwE&gclsrc=aw.ds
-
-**Install oh-my-zsh**
-https://www.youtube.com/watch?v=eh7lM3Yvf94&ab_channel=CodeFallacy -->
+</details>
 
 ## Usage
 
@@ -117,6 +115,14 @@ Each directory will have a
    onedrive --synchronize --resync
    systemctl --user start onedrive
    ```
+
+## Contributors
+
+<a href="https://github.com/QuanBlue/Linux-Bootstrap/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=QuanBlue/Linux-Bootstrap" />
+</a>
+
+Contributions are always welcome!
 
 ## License
 
