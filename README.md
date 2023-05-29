@@ -8,7 +8,7 @@
 
 <!-- Badges -->
 <p align="center">
-  <a href="https://github.com/QuanBlue/dotfiles/graphs/contributors">
+  <a href="https://github.com/QuanBlue/Linux-Bootstrap/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/QuanBlue/Linux-Bootstrap" alt="contributors" />
   </a>
   <a href="">
