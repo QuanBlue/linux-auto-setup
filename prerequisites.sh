@@ -8,6 +8,3 @@ timedatectl set-local-rtc 1
 sudo apt remove --purge libreoffice\* -y
 sudo apt clean 
 sudo apt autoremove -y
-
-# Install net-tools
-sudo apt-get install net-tools && ifconfig
