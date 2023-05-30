@@ -5,8 +5,7 @@ sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sour
 sudo apt update
 sudo apt install jenkins -y
 sudo systemctl start jenkins
-sudo systemctl status jenkins
 sudo ufw allow 8080
-sudo ufw allow OpenSSH
+sudo ufw allow ssh
 sudo ufw enable
 sudo ufw status

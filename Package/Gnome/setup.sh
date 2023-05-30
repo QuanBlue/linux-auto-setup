@@ -32,7 +32,7 @@ installed_extensions_array=(
 )
 
 echo "------- Install Gnome extensions --------"
-for extension in ${extensions_array[@]}; do
+for extension in ${installed_extensions_array[@]}; do
     echo "[Info] Installing $extension..."
 
     gnome-extensions-cli install $extension

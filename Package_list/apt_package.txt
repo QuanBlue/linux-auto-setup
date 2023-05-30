@@ -1,3 +1,6 @@
+# Secure Shell 
+ssh
+
 # manager network tools
 net-tools
 
