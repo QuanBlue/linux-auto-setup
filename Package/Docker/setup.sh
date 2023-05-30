@@ -10,6 +10,7 @@ apt-cache policy docker-ce
 sudo apt install docker-ce -y
 sudo systemctl enable docker 
 sudo usermod -aG docker $USER
+su - $USER
 
 # Docker compose
 sudo apt install docker-compose -y
