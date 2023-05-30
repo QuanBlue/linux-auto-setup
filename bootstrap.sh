@@ -10,7 +10,7 @@ cd "$project_dir"
 
 
 # Install all packages using snap, apt,...
-info "Install all packages using snap, apt,..."
+info "[Install] all packages using snap, apt,..."
 for file in Package_list/*; do 
   info "============================================"
   info "======== $file ========"
@@ -20,32 +20,30 @@ for file in Package_list/*; do
     "Package_list/apt_package.txt") cmd="apt -y" ;;
     "Package_list/snap_package.txt") cmd="snap" ;;
   esac
-  info "cmd: $cmd"
 
   while read -r package; do
     if [[ ${package:0:1} == "#" || $package == "" ]]; then continue; fi
 
     info "[Install] $package"
-    info "$cmd install $package"
     sudo $cmd install $package
     echo "------------------------------------------"
   done < $file
 done
 
 
-# # Install all packages
-# info "Install all packages"
-# for directory in Package/*; do
-#   # find setup file then run it
-#   find $directory -name "setup.sh" | while read setup; do
-#     info "-------- $directory -----------"
-#     # NOTE: We have to cd back to maintain relative path
-#     cd "$project_dir"
+# Install all packages
+info "[Install] all packages"
+for directory in Package/*; do
+  # find setup file then run it
+  find $directory -name "setup.sh" | while read setup; do
+    info "-------- $directory -----------"
+    # NOTE: We have to cd back to maintain relative path
+    cd "$project_dir"
 
-#     info "[Install] $directory"
-#     . ./$setup
+    info "[Install] $directory"
+    . ./$setup
 
-#   done
-# done
+  done
+done
 
 
