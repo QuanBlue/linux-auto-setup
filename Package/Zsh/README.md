@@ -11,26 +11,49 @@ This directory will setup the `zsh` tool.
 File `setup.sh` will install `zsh` following:
 
 -  [Install ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+-  [Setting terminal schema](https://itsfoss.com/pywal/)
 -  [Install Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 -  [Powerlevel10k theme](https://github.com/romkatv/powerlevel10k)
+-  [Spaceship theme](https://github.com/spaceship-prompt/spaceship-prompt)
 
 ## Usage
 
-Run `setup.sh` to install `zsh`:
+#### Run `setup.sh` to install `zsh`:
 
 ```bash
 ./setup.sh
 ```
 
-Change `zsh` shell theme:
+#### Change `zsh` shell theme:
+
 Find `ZSH_THEME` line then you need to enable it in `.zshrc`
 
 ```bash
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="<theme>"
 ```
 
-Change terminal font to `MesloLGS NF Regular`, size 10:
+> **Note:**  
+> `<theme>`: `powerlevel10k` or `spaceship`
 
-```
-Preference > Unnamed > Custom Font
-```
+#### Change terminal:
+
+-  Font to `MesloLGS NF Regular`, size 10:
+
+   ```
+   Preference > Unnamed > Custom Font
+   ```
+
+-  If you want auto change background and change terminal's color schema follow background:
+
+   -  Install `pywal`:
+
+      ```bash
+      sudo pip3 install pywal
+      ```
+
+   -  Change background and color schema:
+      ```bash
+      wal -i "path/to/image"
+      ```
+
+   > **Note:** More detail: [pywal document](https://itsfoss.com/pywal/)
