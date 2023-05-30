@@ -15,11 +15,12 @@ for file in Package_list/*; do
   info "============================================"
   info "======== $file ========"
   info "============================================"
-
+  
   case $file in
-    "apt_applist.txt") cmd="apt -y" ;;
-    "snap_applist.txt") cmd="snap" ;;
+    "Package_list/apt_package.txt") cmd="apt -y" ;;
+    "Package_list/snap_package.txt") cmd="snap" ;;
   esac
+  info "cmd: $cmd"
 
   while read -r package; do
     if [[ ${package:0:1} == "#" || $package == "" ]]; then continue; fi
@@ -32,19 +33,19 @@ for file in Package_list/*; do
 done
 
 
-# Install all packages
-info "Install all packages"
-for directory in Package/*; do
-  # find setup file then run it
-  find $directory -name "setup.sh" | while read setup; do
-    info "-------- $directory -----------"
-    # NOTE: We have to cd back to maintain relative path
-    cd "$project_dir"
+# # Install all packages
+# info "Install all packages"
+# for directory in Package/*; do
+#   # find setup file then run it
+#   find $directory -name "setup.sh" | while read setup; do
+#     info "-------- $directory -----------"
+#     # NOTE: We have to cd back to maintain relative path
+#     cd "$project_dir"
 
-    info "[Install] $directory"
-    . ./$setup
+#     info "[Install] $directory"
+#     . ./$setup
 
-  done
-done
+#   done
+# done
 
 

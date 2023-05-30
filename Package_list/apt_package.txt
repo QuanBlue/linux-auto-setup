@@ -1,6 +1,9 @@
 # Secure Shell 
 ssh
 
+# Node package manager 
+npm
+
 # manager network tools
 net-tools
 

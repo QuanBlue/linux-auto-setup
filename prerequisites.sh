@@ -4,7 +4,7 @@ info() {
 
 # update system
 info "[Update] System"
-echo -ne 'y\n' | sudo apt update && sudo apt upgrade && sudo apt dist-upgrade -y
+sudo apt update && sudo apt upgrade && sudo apt dist-upgrade -y
 
 # fix wrong time due dual boot
 info "[Fix] Wrong time due dual boot"
