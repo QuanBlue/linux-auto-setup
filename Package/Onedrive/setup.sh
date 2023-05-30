@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
+info() {
+    tput bold;tput setaf "6";tput setab "7";echo "$1";tput sgr0;tput el;
+}
 
+info "[Install] Onedrive"
 sudo apt remove onedrive
 sudo add-apt-repository --remove ppa:yann1ck/onedrive
 sudo rm -rf /var/lib/dpkg/lock-frontend
