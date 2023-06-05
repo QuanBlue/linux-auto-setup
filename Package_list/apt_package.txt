@@ -19,6 +19,9 @@ neofetch
 # pip3 (python3)
 python3-pip
 
+# Run Python applications in isolated virtual environments.
+pipx
+
 # Install mono (running .exe file in linux)
 # Usage: mono [file_name].exe
 mono-complete

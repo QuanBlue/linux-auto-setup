@@ -1,16 +1,21 @@
 #!/usr/bin/env bash
 
 info() {
-    tput bold;tput setaf "6";tput setab "7";echo "$1";tput sgr0;tput el;
+    tput bold
+    tput setaf "6"
+    tput setab "7"
+    echo "$1"
+    tput sgr0
+    tput el
 }
 
-project_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"/../..
+project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"/../..
 cd $project_dir
 
 # Gnome-tweak
 info "[Install] Gnome-tweak"
 echo -ne '\n' | sudo add-apt-repository universe
-sudo apt install gnome-tweaks
+sudo apt install gnome-tweaks -y
 
 # Using gnome-tweak set up theme
 # copy all customize files to ~/
@@ -31,16 +36,19 @@ sudo apt install gnome-shell-extension-desktop-icons-ng -y
 
 # Install gnome-extensions-cli
 info "[Install] gnome-extensions-cli"
-pip3 install --upgrade gnome-extensions-cli
+pipx install gnome-extensions-cli --system-site-packages --force
 
 # Install Gnome Extensions
 info "[Install] Gnome Extensions"
-installed_extensions_array=( 
-    burn-my-windows@schneegans.github.com 
-    netspeedsimplified@prateekmedia.extension 
-    transparent-top-bar@ftpix.com 
+installed_extensions_array=(
+    openweather-extension@jenslody.de
+    tiling-assistant@leleat-on-github
+    pano@elhan.io
+    burn-my-windows@schneegans.github.com
+    netspeedsimplified@prateekmedia.extension
+    transparent-top-bar@ftpix.com
+    ubuntu-dock@ubuntu.com
 )
-
 
 for extension in ${installed_extensions_array[@]}; do
     info "[Install] Gnome extension: $extension"
@@ -48,4 +56,3 @@ for extension in ${installed_extensions_array[@]}; do
     gnome-extensions-cli install $extension
     gnome-extensions-cli enable $extension
 done
-
