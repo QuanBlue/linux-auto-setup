@@ -1,6 +1,9 @@
 # Visual studio code
 --classic code 
 
+# Chat application
+discord
+
 # Notion - note
 notion-snap-reborn 
 
