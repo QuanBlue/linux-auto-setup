@@ -42,7 +42,6 @@ pipx install gnome-extensions-cli --system-site-packages --force
 info "[Install] Gnome Extensions"
 installed_extensions_array=(
     openweather-extension@jenslody.de
-    tiling-assistant@leleat-on-github
     pano@elhan.io
     burn-my-windows@schneegans.github.com
     netspeedsimplified@prateekmedia.extension
