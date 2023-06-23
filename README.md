@@ -72,7 +72,7 @@ Each directory will have a
 
 ### Run Locally
 
--  Auto install
+**Step 1:** Auto install
 
    -  **Run from script**:
 
@@ -103,7 +103,7 @@ Each directory will have a
       bash ./install.sh
       ```
 
--  After that, manually custom installed theme, using:
+**Step 2:** manually custom installed theme, using:
    -  **`Tweaks (Gnome-tweaks)`** and custom: `icon`, `cursor`, `background`
    -  **`Extensions (Gnome-shell-extensions)`** and custom: installed `extensions`
    -  **`Setting`** and custom: `Key board shortcut`, `Startup application`, `Power`,...
