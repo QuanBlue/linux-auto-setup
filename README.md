@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="assets/linux-auto-setup-logo.png" alt="icon" width="200"></img>
+  <img src="assets/Linux-bootstrap-logo.png" alt="icon" width="200"></img>
   <br>
   <b>Linux bootstrap</b>
 </h1>
