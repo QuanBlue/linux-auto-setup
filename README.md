@@ -49,7 +49,7 @@
 -  [License](#license)
 </details>
 
-## Usage
+# Usage
 
 File `bootstrap.sh` will find all `setup.sh` files in all directories and run it. Then using `apt`, `snap`,... to install other packages.
 
@@ -58,9 +58,9 @@ Each directory will have a
 -  `README.md` file to explain what it does and how to customize.
 -  `setup.sh` file to install packages.
 
-## Getting Started
+# Getting Started
 
-### Prerequisites
+## Prerequisites
 
 -  Install `Git` on your system:
 
@@ -70,7 +70,7 @@ Each directory will have a
 
 -  Bash shell support.
 
-### Run Locally
+## Run Locally
 
 **Step 1:** Auto install
 
@@ -115,8 +115,11 @@ Each directory will have a
    onedrive --synchronize --resync
    systemctl --user start onedrive
    ```
+# Roadmap
+[x] Auto install package
+[ ] Selection package menu
 
-## Contributors
+# Contributors
 
 <a href="https://github.com/QuanBlue/linux-auto-setup/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=QuanBlue/linux-auto-setup" />
