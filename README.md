@@ -116,8 +116,8 @@ Each directory will have a
    systemctl --user start onedrive
    ```
 # Roadmap
-[x] Auto install package
-[ ] Selection package menu
+- [x] Auto install package
+- [ ] Selection package menu
 
 # Contributors
 
