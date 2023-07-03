@@ -1,10 +1,11 @@
 info() {
-    tput bold;tput setaf "6";tput setab "7";echo "$1";tput sgr0;tput el;
+    tput bold
+    tput setaf "6"
+    tput setab "7"
+    echo "$1"
+    tput sgr0
+    tput el
 }
-
-# Enter Super user
-info "[User] Super user"
-sudo su
 
 # update system
 info "[Update] System"
@@ -17,5 +18,5 @@ timedatectl set-local-rtc 1
 # Uninstall Libre office
 info "[Uninstall] Libre office"
 sudo apt remove --purge libreoffice\* -y
-sudo apt clean 
+sudo apt clean
 sudo apt autoremove -y

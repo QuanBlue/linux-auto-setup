@@ -45,9 +45,10 @@
 -  [Getting Started](#getting-started)
    -  [Prerequisites](#prerequisites)
    -  [Run Locally](#run-locally)
+-  [Roadmap](#roadmap)
 -  [Contributors](#contributors)
--  [License](#license)
-</details>
+   -  [License](#license)
+   </details>
 
 # Usage
 
@@ -69,44 +70,50 @@ Each directory will have a
    ```
 
 -  Bash shell support.
+-  Enter Super User mode:
+
+   ```bash
+   sudo su
+   ```
 
 ## Run Locally
 
 **Step 1:** Auto install
 
-   -  **Run from script**:
+-  **Run from script**:
 
-      File `install.sh` will clone this repository in `~/dotfiles` and run
-      `bootstrap.sh` to install all packages and dotfiles.
+   File `install.sh` will clone this repository in `~/dotfiles` and run
+   `bootstrap.sh` to install all packages and dotfiles.
 
-      ```bash
-      curl -sSL https://raw.githubusercontent.com/QuanBlue/linux-auto-setup/main/install.sh | bash -
-      ```
+   ```bash
+   curl -sSL https://raw.githubusercontent.com/QuanBlue/linux-auto-setup/main/install.sh | bash -
+   ```
 
-   -  **Run manually**:
+-  **Run manually**:
 
-      Clone the project
+   Clone the project
 
-      ```bash
-      git clone https://github.com/QuanBlue/linux-auto-setup
-      ```
+   ```bash
+   git clone https://github.com/QuanBlue/linux-auto-setup
+   ```
 
-      Go to the project directory
+   Go to the project directory
 
-      ```bash
-      cd linux-auto-setup
-      ```
+   ```bash
+   cd linux-auto-setup
+   ```
 
-      Run the `install` script
+   Run the `install` script
 
-      ```bash
-      bash ./install.sh
-      ```
+   ```bash
+   bash ./install.sh
+   ```
 
 **Step 2:** manually custom installed theme, using:
-   -  **`Tweaks (Gnome-tweaks)`** and custom: `icon`, `cursor`, `background`
-   -  **`Extensions (Gnome-shell-extensions)`** and custom: installed `extensions`
-   -  **`Setting`** and custom: `Key board shortcut`, `Startup application`, `Power`,...
+
+-  **`Tweaks (Gnome-tweaks)`** and custom: `icon`, `cursor`, `background`
+-  **`Extensions (Gnome-shell-extensions)`** and custom: installed `extensions`
+-  **`Setting`** and custom: `Key board shortcut`, `Startup application`, `Power`,...
 -  Set up `Onedrive`:
    Follow this document from [How to Launch OneDrive on Ubuntu 22.04?](https://itslinuxfoss.com/install-use-onedrive-ubuntu-22-04/)
 
@@ -115,9 +122,11 @@ Each directory will have a
    onedrive --synchronize --resync
    systemctl --user start onedrive
    ```
+
 # Roadmap
-- [x] Auto install package
-- [ ] Selection package menu
+
+-  [x] Auto install package
+-  [ ] Selection package menu
 
 # Contributors
 
