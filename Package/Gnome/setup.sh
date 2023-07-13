@@ -43,6 +43,7 @@ info "[Install] Gnome Extensions"
 installed_extensions_array=(
     openweather-extension@jenslody.de
     pano@elhan.io
+    simple-timer@majortomvr.github.com
     burn-my-windows@schneegans.github.com
     netspeedsimplified@prateekmedia.extension
     transparent-top-bar@ftpix.com
