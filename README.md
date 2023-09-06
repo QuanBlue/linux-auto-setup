@@ -41,14 +41,13 @@
 <details open>
 <summary>Table of Contents</summary>
 
--  [Usage](#usage)
--  [Getting Started](#getting-started)
-   -  [Prerequisites](#prerequisites)
-   -  [Run Locally](#run-locally)
--  [Roadmap](#roadmap)
--  [Contributors](#contributors)
-   -  [License](#license)
-   </details>
+- [Usage](#usage)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Run Locally](#run-locally)
+- [Roadmap](#roadmap)
+- [Contributors](#contributors)
+  - [License](#license)
 
 # Usage
 
@@ -56,77 +55,72 @@ File `bootstrap.sh` will find all `setup.sh` files in all directories and run it
 
 Each directory will have a
 
--  `README.md` file to explain what it does and how to customize.
--  `setup.sh` file to install packages.
+- `README.md` file to explain what it does and how to customize.
+- `setup.sh` file to install packages.
 
 # Getting Started
 
 ## Prerequisites
 
--  Install `Git` on your system:
+- Install `Git` on your system:
 
-   ```bash
-   sudo apt-get install git
-   ```
+  ```bash
+  sudo apt-get install git
+  ```
 
--  Bash shell support.
--  Enter Super User mode:
+- Bash shell support.
+- Enter Super User mode:
 
-   ```bash
-   sudo su
-   ```
+  ```bash
+  sudo su
+  ```
 
 ## Run Locally
 
 **Step 1:** Auto install
 
--  **Run from script**:
+Clone the project
 
-   File `install.sh` will clone this repository in `~/dotfiles` and run
-   `bootstrap.sh` to install all packages and dotfiles.
+```bash
+git clone https://github.com/QuanBlue/linux-auto-setup
+```
 
-   ```bash
-   curl -sSL https://raw.githubusercontent.com/QuanBlue/linux-auto-setup/main/install.sh | bash -
-   ```
+Go to the project directory
 
--  **Run manually**:
+```bash
+cd linux-auto-setup
+```
 
-   Clone the project
+Enter `Super user` mode:
 
-   ```bash
-   git clone https://github.com/QuanBlue/linux-auto-setup
-   ```
+```bash
+sudo su
+```
 
-   Go to the project directory
+Run the `install` script
 
-   ```bash
-   cd linux-auto-setup
-   ```
-
-   Run the `install` script
-
-   ```bash
-   bash ./install.sh
-   ```
+```bash
+bash ./install.sh
+```
 
 **Step 2:** manually custom installed theme, using:
 
--  **`Tweaks (Gnome-tweaks)`** and custom: `icon`, `cursor`, `background`
--  **`Extensions (Gnome-shell-extensions)`** and custom: installed `extensions`
--  **`Setting`** and custom: `Key board shortcut`, `Startup application`, `Power`,...
--  Set up `Onedrive`:
-   Follow this document from [How to Launch OneDrive on Ubuntu 22.04?](https://itslinuxfoss.com/install-use-onedrive-ubuntu-22-04/)
+- **`Tweaks (Gnome-tweaks)`** and custom: `icon`, `cursor`, `background`
+- **`Extensions (Gnome-shell-extensions)`** and custom: installed `extensions`
+- **`Setting`** and custom: `Key board shortcut`, `Startup application`, `Power`,...
+- Set up `Onedrive`:
+  Follow this document from [How to Launch OneDrive on Ubuntu 22.04?](https://itslinuxfoss.com/install-use-onedrive-ubuntu-22-04/)
 
-   ```bash
-   systemctl --user stop onedrive
-   onedrive --synchronize --resync
-   systemctl --user start onedrive
-   ```
+  ```bash
+  systemctl --user stop onedrive
+  onedrive --synchronize --resync
+  systemctl --user start onedrive
+  ```
 
 # Roadmap
 
--  [x] Auto install package
--  [ ] Selection package menu
+- [x] Auto install package
+- [ ] Selection package menu
 
 # Contributors
 

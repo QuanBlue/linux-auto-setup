@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
 info() {
-    tput bold;tput setaf "6";tput setab "7";echo "$1";tput sgr0;tput el;
+    tput bold
+    tput setaf "6"
+    tput setab "7"
+    echo "$1"
+    tput sgr0
+    tput el
 }
 
 # Install font
@@ -12,15 +17,13 @@ sudo cp -r "./font/MesloLGS" /usr/share/fonts/truetype/
 info "[Install] power10level config"
 cp ".p10k.zsh" ~/
 
-
-
 # Install Zsh shell
 info "[Install] Zsh shell"
 sudo apt install zsh -y
 
 # change default shell to zsh
 info "[Config] change default shell to zsh"
-chsh -s /bin/zsh 
+chsh -s $(which zsh)
 
 # Install oh-my-zsh (zsh theme manager)
 info "[Install] oh-my-zsh (zsh theme manager)"
@@ -37,7 +40,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 # install spaceship theme
 info "[Install] spaceship theme"
-git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship-prompt 
+git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship-prompt
 ln -s ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship.zsh-theme
 
 info "[Install] Oh-my-zsh plugins"
@@ -55,10 +58,5 @@ info "[Install] thefuck"
 sudo apt install python3-dev python3-pip python3-setuptools -y
 sudo apt install thefuck -y
 
-info "[Config] set Thefuck alias"
-eval $(thefuck --alias fuck) # set alias
-
 info "[Update] ~/.zshrc"
-source ~/.zshrc
-
-
+zsh && source ~/.zshrc
