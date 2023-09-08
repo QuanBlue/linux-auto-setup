@@ -26,14 +26,6 @@ nvm use --lts
 # Set the latest version as the default:
 nvm alias default node
 
-# remove NodeJS package
-info "[Remove] NodeJS package"
-sudo apt remove nodejs -y
-
-# create symbolic link
-info "[Create] Node symbolic link"
-sudo ln -s /usr/bin/nodejs /usr/local/bin/node
-
 # update npm
 info "[Update] npm"
 npm install -g npm@latest
