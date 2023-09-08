@@ -102,4 +102,8 @@ source $ZSH/oh-my-zsh.sh
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 
 # Set alias
-alias -g fuck="thefuck"
+alias fuck="thefuck"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
