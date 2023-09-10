@@ -4,8 +4,14 @@ ssh
 # manager network tools
 net-tools
 
+# Filesystem in Userspace - Running AppImage application
+fuse libfuse2
+
 # client URL - a command line tool to transfer data to and from a server.
 curl
+
+# Manager partitions for Linux
+gparted
 
 # Terminal multiplexer
 tmux

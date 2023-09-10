@@ -20,3 +20,9 @@ info "[Uninstall] Libre office"
 sudo apt remove --purge libreoffice\* -y
 sudo apt clean
 sudo apt autoremove -y
+
+# Add the Universe Repository
+echo -ne '\n' | sudo add-apt-repository universe
+
+# Update the System
+sudo apt update
