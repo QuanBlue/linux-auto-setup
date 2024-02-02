@@ -4,7 +4,11 @@ discord
 # Notion - note
 notion-snap-reborn 
 
+# AI Chatbot
 chatgpt-desktop
+
+# AI Chatbot
+google-bard 
 
 # E-book reader
 foliate
