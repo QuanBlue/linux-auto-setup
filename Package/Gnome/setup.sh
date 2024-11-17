@@ -42,7 +42,7 @@ pipx install gnome-extensions-cli --system-site-packages --force
 info "[Install] Gnome Extensions"
 installed_extensions_array=(
     openweather-extension@jenslody.de
-    pano@elhan.io
+    clipboard-history@alexsaveau.dev
     simple-timer@majortomvr.github.com
     burn-my-windows@schneegans.github.com
     netspeedsimplified@prateekmedia.extension
