@@ -1,14 +1,5 @@
-# Chat application
-discord
-
 # Notion - note
 notion-snap-reborn 
-
-# AI Chatbot
-chatgpt-desktop
-
-# AI Chatbot
-google-bard 
 
 # E-book reader
 foliate
@@ -19,5 +10,8 @@ vlc
 # Free office integrates all office document processor: Word, Excel Spreadsheet, ...
 wps-office 
 
+# Remmina
+remmina  --edge
 
-
+# Ngrok 
+ngrok
