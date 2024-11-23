@@ -1,5 +1,6 @@
 # Notion - note
-notion-snap-reborn 
+# notion-snap-reborn 
+notion-desktop
 
 # E-book reader
 foliate
