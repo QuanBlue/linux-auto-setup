@@ -48,6 +48,7 @@ installed_extensions_array=(
     netspeedsimplified@prateekmedia.extension
     transparent-top-bar@ftpix.com
     ubuntu-dock@ubuntu.com
+    tilingshell@ferrarodomenico.com
 )
 
 for extension in ${installed_extensions_array[@]}; do
