@@ -14,7 +14,7 @@ curl
 gparted
 
 # Terminal multiplexer
-tmux
+tmux 
 
 # Show system information
 neofetch
