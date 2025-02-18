@@ -16,6 +16,10 @@ gparted
 # Terminal multiplexer
 tmux 
 
+# bat: A cat(1) clone with syntax highlighting and Git integration.
+# Using: batcat <file>
+bat
+
 # Show system information
 neofetch
 
