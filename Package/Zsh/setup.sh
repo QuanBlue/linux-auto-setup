@@ -13,10 +13,6 @@ info() {
 info "[Install] MesloLGS font"
 sudo cp -r "./font/MesloLGS" /usr/share/fonts/truetype/
 
-# Install power10level config
-info "[Install] power10level config"
-cp ".p10k.zsh" ~/
-
 # Install Zsh shell
 info "[Install] Zsh shell"
 sudo apt install zsh -y
@@ -29,10 +25,6 @@ chsh -s $(which zsh)
 info "[Install] oh-my-zsh (zsh theme manager)"
 rm -rf ~/.oh-my-zsh
 echo -ne 'y\n' | sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Install Zsh config
-info "[Install] Zsh config"
-cp ".zshrc" ~/ -f
 
 # install power10level theme
 info "[Install] power10level theme"
@@ -53,10 +45,14 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.
 info "[Install] Oh-my-zsh plugins: zsh-syntax-highlighting"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-# thefuck - corrects errors in previous console commands.
-info "[Install] thefuck"
-sudo apt install python3-dev python3-pip python3-setuptools -y
-sudo apt install thefuck -y
+#------------------APPLY ZSH OLD CONFIG-----------------------
+# Install Zsh config
+info "[Install] Zsh config"
+cp ".zshrc" ~/ -f
+
+# Install power10level config
+info "[Install] power10level config"
+cp ".p10k.zsh" ~/
 
 info "[Update] ~/.zshrc"
-zsh && source ~/.zshrc
+exec zsh -l
