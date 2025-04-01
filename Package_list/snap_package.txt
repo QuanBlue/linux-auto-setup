@@ -16,3 +16,6 @@ remmina  --edge
 
 # Ngrok 
 ngrok
+
+# Kubectl - a tool that interact with k8s cluster
+kubectl --classic
