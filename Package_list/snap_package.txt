@@ -19,3 +19,6 @@ ngrok
 
 # Kubectl - a tool that interact with k8s cluster
 kubectl --classic
+
+# dbeaver - a tool interact with db
+dbeaver-ce
